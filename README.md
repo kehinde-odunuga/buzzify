@@ -6,5 +6,5 @@ A Django-based backend for a social media platform. This project includes basic 
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/kehinde-odunuga/buzzify.git
    cd buzzify
