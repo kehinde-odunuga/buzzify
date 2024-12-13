@@ -5,6 +5,7 @@ from rest_framework import status
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from rest_framework.authtoken.models import Token
+from rest_framework.permissions import IsAuthenticated
 
 
 class RegisterUserView(APIView):
@@ -45,3 +46,12 @@ class LoginUserView(APIView):
             token, created = Token.objects.get_or_create(user=user)
             return Response({"token": token.key}, status=status.HTTP_200_OK)
         return Response({"error": "Invalid credentials"}, status=status.HTTP_401_UNAUTHORIZED)
+    
+    class ProtectedView(APIView):
+        permission_classes = [IsAuthenticated]
+
+        def get(self, request):
+            return Response({"message": "This is a protected view"}, status=200)
+
+
+
