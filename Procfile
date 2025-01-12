@@ -1,0 +1,1 @@
+web gunicorn buzzify.wsgi:application --log-file -

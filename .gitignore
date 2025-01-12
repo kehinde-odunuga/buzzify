@@ -1,5 +1,24 @@
-venv/
+# Python-related
 *.pyc
+*.pyo
 __pycache__/
+*.log
+
+# Environment variables
+buzzify/.env
+
+# Django-related
 db.sqlite3
-.env
+media/
+
+# Virtual environment
+venv/
+env/
+
+# IDE-specific
+.idea/
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
