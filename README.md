@@ -35,7 +35,7 @@ This project is a backend implementation of  **Buzzify API** built using Django 
 ## **Tech Stack**
 
 - **Backend Framework:** Django, Django REST Framework
-- **Database:** SQLite (can be configured to use PostgreSQL/MySQL)
+- **Database:** MySQL (can be configured to use PostgreSQL)
 - **Authentication:** JWT (via `rest_framework_simplejwt`)
 - **Media Storage:** Configured for local file storage
 - **Dependencies:**
@@ -154,7 +154,7 @@ This project is a backend implementation of  **Buzzify API** built using Django 
 .
 ├── users/             # User-related models, views, serializers, and URLs
 ├── posts/             # Post-related models, views, serializers, and URLs
-├── core/              # Project-level settings and configurations
+├── buzzify/              # Project-level settings and configurations
 ├── media/             # Uploaded media files
 ├── requirements.txt   # Project dependencies
 └── README.md          # Project documentation
